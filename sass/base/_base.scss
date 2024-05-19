@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 10px
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  @include respond(tab-port) {
+    font-size: 50%; // 8px
+  }
+}
+
+body {
+  font-family: $body-font;
+  font-size: $font-size;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+
+  @include respond(tab-land) {
+    padding: 0 10rem;
+  }
+
+  @include respond(small-phone) {
+    padding: 0 5rem;
+  }
+}
