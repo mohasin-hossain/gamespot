@@ -1,0 +1,126 @@
+.nav {
+  height: 7rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  color: $ClrWhite;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    & img {
+      width: 100%;
+    }
+
+    & p {
+      font-weight: 600;
+      font-size: 3rem;
+      color: $ClrBlack;
+    }
+
+    & p span {
+      color: $ClrPink;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    font-weight: 400;
+    font-size: 1.7rem;
+    position: relative;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: center;
+      position: fixed;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border: 2px solid $ClrPink;
+      left: 50%;
+      top: 20rem;
+      transform: translateX(-50%) scale(0);
+      width: 40rem;
+      height: 40rem;
+      border-radius: 2rem;
+      transition: all 0.4s cubic-bezier(1, 0, 0, 1);
+      z-index: 1;
+    }
+
+    &.active {
+      transform: translateX(-50%) scale(1);
+    }
+  }
+
+  &__item:not(:last-child) {
+    position: relative;
+
+    @include UnderlineAnimation;
+  }
+
+  &__item:last-child {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: rgba(11, 2, 35, 0.1);
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.8rem;
+    color: $ClrBlack;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $ClrBlack;
+    font-weight: 400;
+    font-size: 1.7rem;
+
+    @include respond(tab-port) {
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+
+    & .bar {
+      width: 4rem;
+      height: 0.5rem;
+      margin: 0.5rem;
+      background-color: $ClrPink;
+      border-radius: 0.4rem;
+      transition: all 0.4s cubic-bezier(1, 0, 0, 1);
+    }
+
+    @include respond(tab-port) {
+      display: block;
+      cursor: pointer;
+
+      &.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+
+      &.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+
+      &.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+}
