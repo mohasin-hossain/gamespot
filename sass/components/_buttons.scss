@@ -1,0 +1,24 @@
+.btn {
+  padding: 1.5rem 3.5rem;
+  color: $ClrWhite;
+  border: none;
+  border-radius: 100vh;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 90%;
+    transform: scale(1.02);
+  }
+}
+
+.btn__primary {
+  background: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
+}
+
+.btn__secondary {
+  background-color: #4ec5f7;
+}

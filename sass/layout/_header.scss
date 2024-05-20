@@ -1,0 +1,57 @@
+.header {
+  height: calc(100vh - 7rem);
+
+  @include respond(tab-land) {
+    height: unset;
+    padding: 5rem 0;
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__left {
+    width: 50%;
+
+    & .heading-3 {
+      text-transform: uppercase;
+    }
+
+    & .heading-1 {
+      background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &__features > div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    &__features > div:first-child {
+        padding-top: 3rem;
+    }
+
+    &__features > div:last-child {
+        padding-bottom: 3rem;
+    }
+
+    & button:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+  }
+
+  &__right {
+    width: 50%;
+
+    & img {
+      width: 100%;
+    }
+  }
+}

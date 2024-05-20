@@ -1,6 +1,5 @@
 %heading {
   font-family: $body-font;
-  font-weight: 400;
 }
 
 .heading-1 {
@@ -37,5 +36,4 @@
 .heading-4 {
   @extend %heading;
   font-size: 2.2rem;
-  font-weight: 400;
 }
