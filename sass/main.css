@@ -378,7 +378,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .gamers__right p:first-of-type {
-  color: #534c64;
+  color: #534C64;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.5rem;
@@ -386,4 +386,76 @@ body {
 }
 .gamers__right p:last-of-type {
   padding-top: 2rem;
+}
+
+.videos {
+  padding: 10rem 0;
+}
+.videos .heading-3 {
+  text-align: center;
+}
+.videos .heading-3 span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.videos .container > p {
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #534C64;
+}
+.videos__container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+}
+.videos .video__play {
+  display: none;
+  transition: 0.4s ease-in-out;
+}
+.videos .video {
+  width: 28rem;
+  cursor: pointer;
+}
+.videos .video .video_img {
+  position: relative;
+}
+.videos .video .video_img:hover .video__play {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 5px solid #FF42A5;
+  border-radius: 2rem;
+}
+.videos .video .video_img:hover .video__play img {
+  width: 8rem;
+  height: 8rem;
+}
+.videos .video .video_img:hover .video__play p {
+  font-size: 3rem;
+  color: #FF42A5;
+  font-weight: 700;
+}
+.videos .video .video_img img {
+  width: 100%;
+  height: 40rem;
+  border-radius: 2rem;
+  border: 5px solid transparent;
+  position: relative;
+}
+.videos .video p {
+  color: #534C64;
+  padding: 1rem;
 }/*# sourceMappingURL=main.css.map */
