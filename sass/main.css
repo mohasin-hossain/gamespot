@@ -593,4 +593,32 @@ body {
 }
 .careers__right img {
   width: 80%;
+}
+
+.categories {
+  padding: 10rem 0;
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+}
+.categories__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.categories__container > div {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  background-color: #ffffff;
+  border-radius: 100vh;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s linear;
+  padding: 0.8rem;
+  min-width: 20rem;
+}
+.categories__container > div:hover {
+  border: 2px solid #FF42A5;
 }/*# sourceMappingURL=main.css.map */
