@@ -1,0 +1,43 @@
+.careers {
+  background: $ClrPink;
+  color: $ClrWhite;
+  padding: 10rem 0;
+
+  &__flex {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__left {
+    width: 40%;
+
+    & > p {
+        font-size: 1.4rem;
+        padding: 2rem 0;
+        text-align: justify;
+        line-height: 2rem;
+    }
+  }
+
+  &__categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 3rem);
+    font-weight: 600;
+    padding-top: 4rem;
+
+    & .r-align {
+        text-align: end;
+    }
+  }
+
+  &__right {
+    width: 60%;
+    display: grid;
+    place-items: end;
+
+    & img {
+        width: 80%;
+    }
+  }
+}

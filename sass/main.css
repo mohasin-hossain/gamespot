@@ -556,4 +556,41 @@ body {
   color: #534C64;
   line-height: 2.5rem;
   padding-top: 2rem;
+}
+
+.careers {
+  background: #FF42A5;
+  color: #ffffff;
+  padding: 10rem 0;
+}
+.careers__flex {
+  display: flex;
+  gap: 2rem;
+}
+.careers__left {
+  width: 40%;
+}
+.careers__left > p {
+  font-size: 1.4rem;
+  padding: 2rem 0;
+  text-align: justify;
+  line-height: 2rem;
+}
+.careers__categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 3rem);
+  font-weight: 600;
+  padding-top: 4rem;
+}
+.careers__categories .r-align {
+  text-align: end;
+}
+.careers__right {
+  width: 60%;
+  display: grid;
+  place-items: end;
+}
+.careers__right img {
+  width: 80%;
 }/*# sourceMappingURL=main.css.map */
