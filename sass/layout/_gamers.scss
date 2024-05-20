@@ -1,0 +1,42 @@
+.gamers {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 13.13%,
+    rgba(255, 66, 165, 0.03) 87.94%
+  );
+  padding: 10rem 0;
+
+  &__flex {
+    display: flex;
+    align-items: center;
+  }
+
+  &__left {
+    width: 60%;
+
+    & img {
+      width: 90%;
+    }
+  }
+
+  &__right {
+    width: 40%;
+    text-align: end;
+
+    & .heading-3 {
+      @include GradientText;
+    }
+
+    & p:first-of-type {
+      color: #534c64;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2.5rem;
+      padding: 2rem 0;
+    }
+
+    & p:last-of-type {
+        padding-top: 2rem;
+    }
+  }
+}
