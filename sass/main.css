@@ -621,4 +621,59 @@ body {
 }
 .categories__container > div:hover {
   border: 2px solid #FF42A5;
+  color: #FF42A5;
+}
+
+.footer {
+  padding: 10rem 0;
+  background: #0b0223;
+  color: #534C64;
+  text-align: center;
+}
+.footer .nav__logo {
+  display: flex;
+  align-items: center;
+}
+.footer .nav__logo img {
+  width: 8rem;
+}
+.footer .nav__logo p {
+  color: #ffffff;
+}
+.footer__links, .footer__policy__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding-top: 5rem;
+}
+.footer__links a, .footer__policy__links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+}
+.footer__policy__links a {
+  color: #534C64;
+}
+.footer__social__links {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.footer__social__links img {
+  cursor: pointer;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__links {
+    flex-direction: column;
+  }
+  .footer__social__links {
+    gap: 1.4rem;
+  }
+}
+.footer .end-text {
+  padding-top: 2rem;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,66 @@
+.footer {
+  padding: 10rem 0;
+  background: #0b0223;
+  color: $ClrGray;
+  text-align: center;
+
+  & .nav__logo {
+    display: flex;
+    align-items: center;
+
+    & img {
+      width: 8rem;
+    }
+  }
+
+  & .nav__logo p {
+    color: $ClrWhite;
+  }
+
+  &__links,
+  &__policy__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 5rem;
+  }
+
+  &__links a,
+  &__policy__links a {
+    text-decoration: none;
+    color: $ClrWhite;
+    font-weight: 600;
+  }
+
+  &__policy__links a {
+    color: $ClrGray;
+  }
+
+  &__social__links {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    & img {
+      cursor: pointer;
+    }
+  }
+
+  @include respond(small-phone) {
+    &__links {
+      flex-direction: column;
+    }
+
+    &__social__links {
+        gap: 1.4rem;
+    }
+  }
+
+  & .end-text {
+    padding-top: 2rem;
+  }
+}
