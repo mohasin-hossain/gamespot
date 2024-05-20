@@ -1,20 +1,25 @@
 .online {
   padding: 10rem 0;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 66, 165, 0.03) 13.13%,
-    rgba(255, 66, 165, 0.03) 87.94%
-  );
+  background: $ClrWhite;
 
   &__flex {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include respond(small-phone) {
+      flex-direction: column;
+      gap: 10rem;
+    }
   }
 
   &__left {
     width: 50%;
     position: relative;
+
+    @include respond(small-phone) {
+      width: 100%;
+    }
 
     &__img__lg {
       display: flex;
@@ -43,6 +48,10 @@
     text-align: center;
     display: grid;
     place-items: center;
+
+    @include respond(small-phone) {
+      width: 100%;
+    }
 
     & > div {
       max-width: 40rem;

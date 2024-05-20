@@ -11,10 +11,21 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+
+    @include respond(phone) {
+      flex-direction: column-reverse;
+      gap: 5rem;
+    }
   }
 
   &__left {
     width: 50%;
+
+    @include respond(phone) {
+      width: 100%;
+      display: grid;
+      place-items: center;
+    }
 
     & .heading-3 {
       text-transform: uppercase;
@@ -30,6 +41,10 @@
       justify-content: flex-start;
       gap: 1rem;
       margin: 1rem 0;
+
+      @include respond(phone) {
+        justify-content: center;
+      }
     }
 
     &__features > div:first-child {
@@ -47,6 +62,10 @@
 
   &__right {
     width: 50%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
 
     & img {
       width: 100%;

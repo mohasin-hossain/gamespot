@@ -6,10 +6,18 @@
   &__flex {
     display: flex;
     gap: 2rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 
   &__left {
     width: 40%;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
 
     & > p {
         font-size: 1.4rem;
@@ -35,6 +43,12 @@
     width: 60%;
     display: grid;
     place-items: end;
+
+    @include respond(tab-port) {
+      width: 80%;
+      place-items: end;
+      padding-top: 4rem;
+    }
 
     & img {
         width: 80%;
